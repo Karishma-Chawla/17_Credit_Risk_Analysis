@@ -1,5 +1,5 @@
 # Overview
-AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing process. The purpose of this project is to review and analyze the production data using R for different manufacturing lots to help resolve the problem.
+Using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, the target is to  apply machine learning to solve credit card risk.
 
 ## Linear Regression to Predict MPG
 
