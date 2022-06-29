@@ -60,31 +60,15 @@ SMOTEENN Model combines aspects of both oversampling and undersampling.
 •	The balanced accuracy score increased to 93% with this model.
 •	The "High Risk precision rate increased to 9% with the recall at 92% giving this model an F1 score of 16%.
 •	"Low Risk" still had a precision rate of 100% with the recall now at 94%.
+
 # Summary
 Comparing all the models, Easy Ensemble AdaBoost Classifier yielded the best results with an accuracy rate of 93% , 9% precision rate for "High Risk candidates with 92% recall. The sensitivity of predicting ‘low risk’ was highest at 94% recall (against late 50’s to mid 60’s range by other models).
+
 Ranking based on accuracy and high risk results
-•	EasyEnsembleClassifer: 93.2% accuracy, 9% precision, 92% recall, and 16% F1 Score
-•	BalancedRandomForestClassifer: 78.8% accuracy, 4% precision, 67% recall and 7% F1 Score
-•	SMOTE: Accuracy score of 65%,1% precision, 61% recall of 64%. 
-•	SMOTEENN: 65% accuracy, 1% precision, 72% recall and 2% F1 Score
-•	ClusterCentroids: 65% accuracy, 1% precision, 61% recall resulting in F1 score of 1%.
-•	
-•	RandomOverSampler: 62.5% accuracy, 1% precision, 60% recall 
-=======
-##Deliverable 4
 
-### Metric
-In order to analysis the MechaCar’s performance against the competition, I will measure the fuel efficiency.
-
-### Null and Alternate Hypothesis
-
-Null Hypothesis: The means of fuel efficiency of all vehicles in this class are equal.
-Alternative Hypothesis: At least one of the vehicles in this class has a different mean of fuel efficiency than other vehicles.
-
-### Statistical Test Used
-
-The best statistical test for this would be two-sample t-tests.
-
-### Data is needed to run the statistical test?
-Mileage data on for 30 MechaCars, and 30 of each other 5 competition is needed.  
->>>>>>> df49d8ad8e38d6355dad71916e8b5e47886b3044
+* EasyEnsembleClassifer: 93.2% accuracy, 9% precision, 92% recall, and 16% F1 Score
+* BalancedRandomForestClassifer: 78.8% accuracy, 4% precision, 67% recall and 7% F1 Score
+* SMOTE: Accuracy score of 65%,1% precision, 61% recall of 64%. 
+* SMOTEENN: 65% accuracy, 1% precision, 72% recall and 2% F1 Score
+* ClusterCentroids: 65% accuracy, 1% precision, 61% recall resulting in F1 score of 1%.
+* RandomOverSampler: 62.5% accuracy, 1% precision, 60% recall 
