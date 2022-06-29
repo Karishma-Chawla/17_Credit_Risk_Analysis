@@ -1,46 +1,59 @@
+
 # Overview
-AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing process. The purpose of this project is to review and analyze the production data using R for different manufacturing lots to help resolve the problem.
+In objective of the challenge is to predict credit risk using Supervised Learning for a P2P lending service,LendingClub. Machine Learning statistical algorithms are utlized to make predictions based on data patterns provided.Various techniques are used to train and evaluate the data are mentioned below:
+* Two oversampling algorithms -naive random oversampling algorithm and the SMOTE algorithm to determine which algorithm results in the best performance. . 
+* Undersampling data using the ClusterCentroids algorithm.
+* Combination over- and under-sampling algorithm SMOTEENN to resample the data to determine if the algorithm results in the best performance compared to the other sampling algorithms. 
+* Compare two machine learning models that reduce bias, BalancedRandomForestClassifier and Easy Ensemble AdaBoost classifier.
 
-## Linear Regression to Predict MPG
-
-•	Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-Vehicle length, and vehicle ground clearance are likely to provide non-random amounts of variance to the model. 
-•	Is the slope of the linear model considered to be zero? Why or why not?
-Slope is not zero as the p-value, which is 5.35e-11.
-•	Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
-This multiple regression model does predict mpg of MechaCar prototypes effectively as the R-squared value is 71%, which means ~71% of the time the model will predict mpg values correctly. 
+## Results
+### DELIVERABLE 1-Over sampling using RandomOversampler
  
+*  The "High Risk" precision rate was only 1% with the recall at 60%.
+* "Low Risk" had a precision rate of 100% and recall at 65%.
+* Accuracy score of 62.5%.
 
-## Summary Statistics on Suspension Coils
+### Over sampling using SMOTE
+ 
+*  The "High Risk" precision rate was only 1% with the recall at 64%.
+* "Low Risk" had a precision rate of 100% and recall at 66%.
+* Accuracy score of 65%.
+* Results are similar to the last model.
 
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+### Undersampling using ClusterCentroids resampler
 
-Overall, at 62.29 PSI variance of the coils is within 100 PSI. However, looking at individual lots, Lot 3 that is showing much larger variance in performance and consistency, with a variance of 170.29.
-Lot 1 and Lot 2 are well within the 100 PSI variance requirement.
+ 
+* Accuracy score of 65%.
+*  The "High Risk" precision rate was only 1% with the recall at 61% resulting in F1 score of 1%.
+* "Low Risk" had a precision rate of 100% with a recall of 45% compared to oversampling methods.
 
-## T-Tests on Suspension Coils
-Conducting a t-test on the suspension coil data to determine whether there is a statistical difference between the mean of this provided sample dataset and a hypothesized, potential population dataset.
-Summary of the t-test results across all manufacturing lots show that true mean of the sample is 1498.78. At a p-Value of 0.06, we cannot reject the null hypothesis.
+### DELIVERABLE 2- Combination Sampling- SMOTEENN
+SMOTEENN Model combines aspects of both oversampling and undersampling.
 
-For each Lot
-Lot1 has sample mean of 1500 and p-Value of 1 so the null hypothesis cannot be rejected, and the sample mean and the population mean of 1500 are statistically similar.
-Lot2 has sample mean of 1500.2 and p-Value of 0.61  so the null hypothesis cannot be rejected, and the sample mean and the population mean of 1500 are statistically similar.
-Lot3 has sample mean of 1500.2 and p-Value of 0.04 so the null hypothesis that this sample mean and the presumed population mean are not statistically similar.
+ 
+* The balanced accuracy score was at 65% when using a combined sampling model.
+*The "High Risk" precision rate did not improve was only 1%, however the recall increased to 72% giving this model an F1 score of 2%.
+*"Low Risk" still showed a precision rate of 100% with the recall at 57%.
 
+## DELIVERABLE 3- ENSEMBLE CLASSFIERS
+### RandomForestClassifier Model
+ 
+•	The balanced accuracy score increased to 78.8% for this model.
+•	The "High Risk precision rate increased to 4% with the recall at 67% giving this model an F1 score of 7%.
+•	"Low Risk" still had a precision rate of 100% with the recall at 91%.
+### Easy Ensemble AdaBoost Classifier
 
-##Deliverable 4
-
-### Metric
-In order to analysis the MechaCar’s performance against the competition, I will measure the fuel efficiency.
-
-### Null and Alternate Hypothesis
-
-Null Hypothesis: The means of fuel efficiency of all vehicles in this class are equal.
-Alternative Hypothesis: At least one of the vehicles in this class has a different mean of fuel efficiency than other vehicles.
-
-### Statistical Test Used
-
-The best statistical test for this would be two-sample t-tests.
-
-### Data is needed to run the statistical test?
-Mileage data on for 30 MechaCars, and 30 of each other 5 competition is needed.  
+ 
+•	The balanced accuracy score increased to 93% with this model.
+•	The "High Risk precision rate increased to 9% with the recall at 92% giving this model an F1 score of 16%.
+•	"Low Risk" still had a precision rate of 100% with the recall now at 94%.
+# Summary
+Comparing all the models, Easy Ensemble AdaBoost Classifier yielded the best results with an accuracy rate of 93% , 9% precision rate for "High Risk candidates with 92% recall. The sensitivity of predicting ‘low risk’ was highest at 94% recall (against late 50’s to mid 60’s range by other models).
+Ranking based on accuracy and high risk results
+•	EasyEnsembleClassifer: 93.2% accuracy, 9% precision, 92% recall, and 16% F1 Score
+•	BalancedRandomForestClassifer: 78.8% accuracy, 4% precision, 67% recall and 7% F1 Score
+•	SMOTE: Accuracy score of 65%,1% precision, 61% recall of 64%. 
+•	SMOTEENN: 65% accuracy, 1% precision, 72% recall and 2% F1 Score
+•	ClusterCentroids: 65% accuracy, 1% precision, 61% recall resulting in F1 score of 1%.
+•	
+•	RandomOverSampler: 62.5% accuracy, 1% precision, 60% recall 
