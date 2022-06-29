@@ -1,23 +1,26 @@
 
 # Overview
-<<<<<<< HEAD
+
 In objective of the challenge is to predict credit risk using Supervised Learning for a P2P lending service,LendingClub. Machine Learning statistical algorithms are utlized to make predictions based on data patterns provided.Various techniques are used to train and evaluate the data are mentioned below:
+
 * Two oversampling algorithms -naive random oversampling algorithm and the SMOTE algorithm to determine which algorithm results in the best performance. . 
 * Undersampling data using the ClusterCentroids algorithm.
 * Combination over- and under-sampling algorithm SMOTEENN to resample the data to determine if the algorithm results in the best performance compared to the other sampling algorithms. 
 * Compare two machine learning models that reduce bias, BalancedRandomForestClassifier and Easy Ensemble AdaBoost classifier.
-=======
-Using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, the target is to  apply machine learning to solve credit card risk.
->>>>>>> df49d8ad8e38d6355dad71916e8b5e47886b3044
+
 
 ## Results
 ### DELIVERABLE 1-Over sampling using RandomOversampler
- 
+
+![image](https://user-images.githubusercontent.com/98617082/176328272-cc897e40-f6a4-43e8-b0a7-1b19f3cae1f2.png)
+
 *  The "High Risk" precision rate was only 1% with the recall at 60%.
 * "Low Risk" had a precision rate of 100% and recall at 65%.
 * Accuracy score of 62.5%.
 
 ### Over sampling using SMOTE
+![image](https://user-images.githubusercontent.com/98617082/176328289-5f01e146-a3c0-4e17-99f9-dfab67e85a6c.png)
+
  
 *  The "High Risk" precision rate was only 1% with the recall at 64%.
 * "Low Risk" had a precision rate of 100% and recall at 66%.
@@ -25,6 +28,7 @@ Using the credit card credit dataset from LendingClub, a peer-to-peer lending se
 * Results are similar to the last model.
 
 ### Undersampling using ClusterCentroids resampler
+![image](https://user-images.githubusercontent.com/98617082/176328307-ce166b4a-31e7-4ecb-affc-4dd472f9d3d5.png)
 
  
 * Accuracy score of 65%.
@@ -33,6 +37,7 @@ Using the credit card credit dataset from LendingClub, a peer-to-peer lending se
 
 ### DELIVERABLE 2- Combination Sampling- SMOTEENN
 SMOTEENN Model combines aspects of both oversampling and undersampling.
+![image](https://user-images.githubusercontent.com/98617082/176328338-500a8fba-3591-422b-8863-a3cf8f56758d.png)
 
  
 * The balanced accuracy score was at 65% when using a combined sampling model.
@@ -40,15 +45,18 @@ SMOTEENN Model combines aspects of both oversampling and undersampling.
 *"Low Risk" still showed a precision rate of 100% with the recall at 57%.
 
 ## DELIVERABLE 3- ENSEMBLE CLASSFIERS
+
 ### RandomForestClassifier Model
+
+![image](https://user-images.githubusercontent.com/98617082/176328379-77dbf17a-0051-429a-b290-914a14ea4063.png)
  
 •	The balanced accuracy score increased to 78.8% for this model.
 •	The "High Risk precision rate increased to 4% with the recall at 67% giving this model an F1 score of 7%.
 •	"Low Risk" still had a precision rate of 100% with the recall at 91%.
 ### Easy Ensemble AdaBoost Classifier
 
-<<<<<<< HEAD
- 
+![image](https://user-images.githubusercontent.com/98617082/176328413-6ea661c5-7b17-404f-9cf0-7cc069dfe322.png)
+
 •	The balanced accuracy score increased to 93% with this model.
 •	The "High Risk precision rate increased to 9% with the recall at 92% giving this model an F1 score of 16%.
 •	"Low Risk" still had a precision rate of 100% with the recall now at 94%.
