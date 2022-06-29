@@ -1,10 +1,14 @@
 
 # Overview
+<<<<<<< HEAD
 In objective of the challenge is to predict credit risk using Supervised Learning for a P2P lending service,LendingClub. Machine Learning statistical algorithms are utlized to make predictions based on data patterns provided.Various techniques are used to train and evaluate the data are mentioned below:
 * Two oversampling algorithms -naive random oversampling algorithm and the SMOTE algorithm to determine which algorithm results in the best performance. . 
 * Undersampling data using the ClusterCentroids algorithm.
 * Combination over- and under-sampling algorithm SMOTEENN to resample the data to determine if the algorithm results in the best performance compared to the other sampling algorithms. 
 * Compare two machine learning models that reduce bias, BalancedRandomForestClassifier and Easy Ensemble AdaBoost classifier.
+=======
+Using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, the target is to  apply machine learning to solve credit card risk.
+>>>>>>> df49d8ad8e38d6355dad71916e8b5e47886b3044
 
 ## Results
 ### DELIVERABLE 1-Over sampling using RandomOversampler
@@ -43,6 +47,7 @@ SMOTEENN Model combines aspects of both oversampling and undersampling.
 •	"Low Risk" still had a precision rate of 100% with the recall at 91%.
 ### Easy Ensemble AdaBoost Classifier
 
+<<<<<<< HEAD
  
 •	The balanced accuracy score increased to 93% with this model.
 •	The "High Risk precision rate increased to 9% with the recall at 92% giving this model an F1 score of 16%.
@@ -57,3 +62,21 @@ Ranking based on accuracy and high risk results
 •	ClusterCentroids: 65% accuracy, 1% precision, 61% recall resulting in F1 score of 1%.
 •	
 •	RandomOverSampler: 62.5% accuracy, 1% precision, 60% recall 
+=======
+##Deliverable 4
+
+### Metric
+In order to analysis the MechaCar’s performance against the competition, I will measure the fuel efficiency.
+
+### Null and Alternate Hypothesis
+
+Null Hypothesis: The means of fuel efficiency of all vehicles in this class are equal.
+Alternative Hypothesis: At least one of the vehicles in this class has a different mean of fuel efficiency than other vehicles.
+
+### Statistical Test Used
+
+The best statistical test for this would be two-sample t-tests.
+
+### Data is needed to run the statistical test?
+Mileage data on for 30 MechaCars, and 30 of each other 5 competition is needed.  
+>>>>>>> df49d8ad8e38d6355dad71916e8b5e47886b3044
