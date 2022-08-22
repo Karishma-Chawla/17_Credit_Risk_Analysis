@@ -7,7 +7,10 @@ The goal of is to predict credit risk using Supervised Machine Learning model. M
 
 # Data
 
-![image](https://user-images.githubusercontent.com/98617082/186017432-1307ad34-e5fc-45f3-9676-20ff94a4f91a.png)
+CSV file including infomation on applicant and loan.
+
+Size : 435 MB
+![image](https://user-images.githubusercontent.com/98617082/186029250-4ad0a41a-8fb1-4a85-ad8a-003479d4623c.png)
 
 
 Various techniques are used to train and evaluate the data are mentioned below:
