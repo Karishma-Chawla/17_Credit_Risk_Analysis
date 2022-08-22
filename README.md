@@ -5,6 +5,12 @@ The goal of is to predict credit risk using Supervised Machine Learning model. M
 
 <img width="551" alt="Credit Risk" src="https://user-images.githubusercontent.com/98617082/186016565-bd872805-0952-48e8-b908-cd2bebef8921.png">
 
+Various techniques are used to train and evaluate the data are mentioned below:
+* Two oversampling algorithms -naive random oversampling algorithm and the SMOTE algorithm to determine which algorithm results in the best performance. . 
+* Undersampling data using the ClusterCentroids algorithm.
+* Combination over- and under-sampling algorithm SMOTEENN to resample the data to determine if the algorithm results in the best performance compared to the other sampling algorithms. 
+* Compare two machine learning models that reduce bias, BalancedRandomForestClassifier and Easy Ensemble AdaBoost classifier.
+
 # Data
 
 CSV file including infomation on applicant and loan.
@@ -13,11 +19,6 @@ Size : 435 MB
 ![image](https://user-images.githubusercontent.com/98617082/186029250-4ad0a41a-8fb1-4a85-ad8a-003479d4623c.png)
 
 
-Various techniques are used to train and evaluate the data are mentioned below:
-* Two oversampling algorithms -naive random oversampling algorithm and the SMOTE algorithm to determine which algorithm results in the best performance. . 
-* Undersampling data using the ClusterCentroids algorithm.
-* Combination over- and under-sampling algorithm SMOTEENN to resample the data to determine if the algorithm results in the best performance compared to the other sampling algorithms. 
-* Compare two machine learning models that reduce bias, BalancedRandomForestClassifier and Easy Ensemble AdaBoost classifier.
 
 
 ## Results
