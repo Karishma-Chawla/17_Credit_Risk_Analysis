@@ -5,6 +5,11 @@ The goal of is to predict credit risk using Supervised Machine Learning model. M
 
 <img width="551" alt="Credit Risk" src="https://user-images.githubusercontent.com/98617082/186016565-bd872805-0952-48e8-b908-cd2bebef8921.png">
 
+# Data
+
+![image](https://user-images.githubusercontent.com/98617082/186017432-1307ad34-e5fc-45f3-9676-20ff94a4f91a.png)
+
+
 Various techniques are used to train and evaluate the data are mentioned below:
 * Two oversampling algorithms -naive random oversampling algorithm and the SMOTE algorithm to determine which algorithm results in the best performance. . 
 * Undersampling data using the ClusterCentroids algorithm.
