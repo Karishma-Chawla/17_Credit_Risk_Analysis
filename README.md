@@ -1,7 +1,7 @@
 
-# Overview
+# Objective
 
-The goal of is to predict credit risk using Supervised Machine Learning model. Machine Learning statistical algorithms are utlized to make predictions based on data patterns provided.
+The objective of the project is to predict credit risk using Machine Learning statistical algorithms.
 
 <img width="551" alt="Credit Risk" src="https://user-images.githubusercontent.com/98617082/186016565-bd872805-0952-48e8-b908-cd2bebef8921.png">
 
@@ -22,7 +22,7 @@ Size : 435 MB
 
 
 ## Results
-### DELIVERABLE 1-Over sampling using RandomOversampler
+### Over sampling using RandomOversampler
 
 ![image](https://user-images.githubusercontent.com/98617082/176328272-cc897e40-f6a4-43e8-b0a7-1b19f3cae1f2.png)
 
@@ -47,7 +47,7 @@ Size : 435 MB
 *  The "High Risk" precision rate was only 1% with the recall at 61% resulting in F1 score of 1%.
 * "Low Risk" had a precision rate of 100% with a recall of 45% compared to oversampling methods.
 
-### DELIVERABLE 2- Combination Sampling- SMOTEENN
+### Combination Sampling- SMOTEENN
 SMOTEENN Model combines aspects of both oversampling and undersampling.
 ![image](https://user-images.githubusercontent.com/98617082/176328338-500a8fba-3591-422b-8863-a3cf8f56758d.png)
 
@@ -56,7 +56,7 @@ SMOTEENN Model combines aspects of both oversampling and undersampling.
 *The "High Risk" precision rate did not improve was only 1%, however the recall increased to 72% giving this model an F1 score of 2%.
 *"Low Risk" still showed a precision rate of 100% with the recall at 57%.
 
-## DELIVERABLE 3- ENSEMBLE CLASSFIERS
+## ENSEMBLE CLASSFIERS
 
 ### RandomForestClassifier Model
 
