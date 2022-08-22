@@ -1,8 +1,11 @@
 
 # Overview
 
-In objective of the challenge is to predict credit risk using Supervised Learning for a P2P lending service,LendingClub. Machine Learning statistical algorithms are utlized to make predictions based on data patterns provided.Various techniques are used to train and evaluate the data are mentioned below:
+The goal of is to predict credit risk using Supervised Machine Learning model. Machine Learning statistical algorithms are utlized to make predictions based on data patterns provided.
 
+<img width="551" alt="Credit Risk" src="https://user-images.githubusercontent.com/98617082/186016565-bd872805-0952-48e8-b908-cd2bebef8921.png">
+
+Various techniques are used to train and evaluate the data are mentioned below:
 * Two oversampling algorithms -naive random oversampling algorithm and the SMOTE algorithm to determine which algorithm results in the best performance. . 
 * Undersampling data using the ClusterCentroids algorithm.
 * Combination over- and under-sampling algorithm SMOTEENN to resample the data to determine if the algorithm results in the best performance compared to the other sampling algorithms. 
